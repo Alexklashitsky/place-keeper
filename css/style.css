@@ -1,12 +1,12 @@
 
 @font-face {
   font-family: superstar;
-  src: url(/fonts/superstar_2/superstar_memesbruh03.ttf);
+  src: url(fonts/superstar_2/superstar_memesbruh03.ttf);
 }
 
 @font-face {
   font-family: edu;
-  src: url(/fonts/edit_undo_line/edunline.ttf);
+  src: url(fonts/edit_undo_line/edunline.ttf);
 }
 html{
   box-sizing: border-box;
