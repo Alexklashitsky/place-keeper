@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>User Pref</title>
+</head>
+
+<body onload="init()">
+    <header>
+        <h1>User Prefers</h1>
+        <nav>
+            <ul>
+                <li>
+                    <button onclick="onHome()">Home</button>
+                </li>
+                <li>
+                    <button onclick="onUserPrefers()">User Prefers</button>
+                </li>
+                <li>
+                    <button onclick="onMap()">map</button>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="contiener">
+        <div class="main">
+            <form class="userPref" onsubmit="save(event)">
+                <label for="email" class="email">Your mail</label>
+                <input type="email" class="email" name="email">
+                <label for="age">Age:</label>
+                <input type="number" class="age" name="age">
+
+
+
+                <label for="color">choose background color color</label>
+                <input type="color" class="color" name="color" list='colorList'>
+                <label for="color">choose 'font' color</label>
+                <input type="color" class="fontColor" name="fontColor" list='colorList'>
+                <label for="birthDate">Enter Your Birth Day</label>
+                <input type="date" class="birthDate" name="birthDate">
+                <label for="birthTime">Enter the time of your birth</label>
+                <input type="time" class="birthTime" name="birthTime">
+
+                <button>submit</button>
+
+            </form>
+        </div>
+    </div>
+
+
+    <!-- <script src="js/test.js"></script> -->
+    <script src="/js/lib/jquery.js"></script>
+    <script src="/js/services/utilService.js"></script>
+    <script src="/js/services/storageService.js"></script>
+    <script src="/js/userPrefService.js"></script>
+    <script src="/js/services/placeService.js"></script>
+    <script src="js/prefController.js"></script>
+
+    <!-- <script src="/js/testcontriller.js"></script> -->
+</body>
+
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>map</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body onload="init()">
+    <header>
+        <h1>map</h1>
+        <nav>
+            <ul>
+                <li>
+                    <button onclick="onHome()">Home</button>
+                </li>
+                <li>
+                    <button onclick="onUserPrefers()">User Prefers</button>
+                </li>
+                <li>
+                    <button onclick="onMap()">map</button>
+                </li>
+            </ul>
+        </nav>
+
+
+    </header>
+    <div class="continer">
+        <div id="map"></div>
+        <div class="getUserLoction"><button onclick="getLocation()">🎯</button></div>
+        <table>
+            <!-- <thead>
+                <td>location</td>
+                <td>check</td><br>
+            </thead> -->
+
+            <div class="locationTab"></div>
+
+
+        </table>
+
+    </div>
+
+
+
+
+    <script src="/js/lib/jquery.js"></script>
+    <script src="/js/services/utilService.js"></script>
+    <script src="/js/services/storageService.js"></script>
+    <script src="/js/userPrefService.js"></script>
+    <script src="/js/services/placeService.js"></script>
+    <script src="js/mapController.js"></script>
+
+    <!-- <script src="/js/testcontriller.js"></script> -->
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCLowTPAWMVgM9E6mMm_EA_jCbI45Dp8Rk&callback=initMap"></script>
+</body>
+
+</html>
